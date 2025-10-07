@@ -21,9 +21,33 @@ fastify.register(view, {
 fastify.get("/", async (req, reply) => {
   return reply.view("index.hbs", {
     title: "Fastify + Handlebars",
-    message: "Welcome to your first Fastify Handlebars page!",
+    message: "Welcome to your first Fastify/Handlebars page!",
   });
 });
+
+fastify.get('/simple-expressions', async(req, reply) => {
+  return reply.view('simpleExpressions.hbs', {
+    title: 'Simple Expressions'
+  })
+})
+
+fastify.get('/basic-helpers', async(req, reply) => {
+  return reply.view('basicHelpers.hbs', {
+    title: 'Basic Helpers'
+  })
+})
+
+fastify.get('/block-helpers', async(req, reply) => {
+  return reply.view('blockHelpers.hbs', {
+    title: 'Block Helpers'
+  })
+})
+
+fastify.get('/partials', async(req, reply) => {
+  return reply.view('partials.hbs', {
+    title: 'Partials'
+  })
+})
 
 /**
  * Run the server!
