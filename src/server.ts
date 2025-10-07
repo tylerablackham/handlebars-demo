@@ -25,8 +25,8 @@ fastify.register(view, {
 
 fastify.get("/", async (req, reply) => {
   return reply.view("index.hbs", {
-    title: "Fastify/Handlebars Demo",
-    message: "Welcome to your first Fastify/Handlebars page!",
+    title: "Fastify + Handlebars Demo",
+    message: "Welcome to your first Fastify + Handlebars page!",
   });
 });
 
