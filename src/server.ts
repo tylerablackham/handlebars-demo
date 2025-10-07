@@ -16,11 +16,16 @@ fastify.register(view, {
   engine: { handlebars },
   root: join(__dirname, "views"),
   layout: "layout.hbs", // optional default layout
+  options: {
+    partials: {
+      header: "partials/header.hbs",
+    }
+  }
 });
 
 fastify.get("/", async (req, reply) => {
   return reply.view("index.hbs", {
-    title: "Fastify + Handlebars",
+    title: "Fastify/Handlebars Demo",
     message: "Welcome to your first Fastify/Handlebars page!",
   });
 });
