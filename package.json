@@ -1,0 +1,31 @@
+{
+  "name": "handlebars-demo",
+  "version": "0.0.1",
+  "description": "A demo for integrating handlebars into a static web service",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylerablackham/handlebars-demo.git"
+  },
+  "author": "Tyler Blackham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tylerablackham/handlebars-demo/issues"
+  },
+  "homepage": "https://github.com/tylerablackham/handlebars-demo#readme",
+  "keywords": [],
+  "dependencies": {
+    "@fastify/view": "^11.1.1",
+    "fastify": "^5.6.1",
+    "handlebars": "^4.7.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
