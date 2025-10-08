@@ -1,0 +1,19 @@
+<h1>Template:</h1>
+<xmp>
+    \{{#each names}}
+        \{{#if last}}
+            <p>\{{append first last}}</p>
+        \{{else}}
+            <p>\{{first}}</p>
+        \{{/if}}
+    \{{/each}}
+</xmp>
+
+<h1>Output:</h1>
+{{#each names}}
+    {{#if last}}
+        <p>{{append first last}}</p>
+    {{else}}
+        <p>{{first}}</p>
+    {{/if}}
+{{/each}}

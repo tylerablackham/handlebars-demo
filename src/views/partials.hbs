@@ -1,0 +1,19 @@
+<h1>Template:</h1>
+<xmp>
+    \{{#each names}}
+        \{{> exclaim exclamation=this}}
+    \{{/each}}
+
+    \{{> exclaim exclamation='Literal Parameter'}}
+    \{{> exclaim}}
+    \{{> exclaim context}}
+</xmp>
+
+<h1>Output:</h1>
+{{#each names}}
+    {{> exclaim exclamation=this}}
+{{/each}}
+
+{{> exclaim exclamation='Literal Parameter'}}
+{{> exclaim}}
+{{> exclaim context}}

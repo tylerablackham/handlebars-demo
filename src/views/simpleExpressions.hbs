@@ -1,0 +1,21 @@
+<h1>Template:</h1>
+<xmp>
+    <p>\{{header}}</p>
+    <p>First Name: \{{person.firstName}}</p>
+    <p>Last Name: \{{person.lastName}}</p>
+    <p>Age: \{{person.age}}</p>
+
+    \{{#with person}}
+    <p>\{{../header}}, \{{firstName}} \{{lastName}} is \{{age}} years old!</p>
+    \{{/with}}
+</xmp>
+
+<h1>Output:</h1>
+<p>{{header}}</p>
+<p>First Name: {{person.firstName}}</p>
+<p>Last Name: {{person.lastName}}</p>
+<p>Age: {{person.age}}</p>
+
+{{#with person}}
+    <p>{{../header}}, {{firstName}} {{lastName}} is {{age}} years old!</p>
+{{/with}}

@@ -1,0 +1,17 @@
+<h1>Template:</h1>
+<xmp>
+    <p>\{{loud header}}</p>
+
+    \{{#with person}}
+        <p>\{{append firstName lastName}} is \{{age}} years old!</p>
+    \{{/with}}
+    <p>\{{append (loud header) '!!!' false}}</p>
+</xmp>
+
+<h1>Output:</h1>
+<p>{{loud header}}</p>
+
+{{#with person}}
+    <p>{{append firstName lastName}} is {{age}} years old!</p>
+{{/with}}
+<p>{{append (loud header) '!!!' false}}</p>
